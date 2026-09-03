@@ -22,7 +22,6 @@ import {
 
 const NAV_LINKS = ["About", "Skills", "Projects", "Experience", "Contact"];
 
-// Skills extracted from CV[cite: 3, 4]
 const SKILLS = [
   { name: "React.js & Next.js", icon: Globe, level: 95 },
   { name: "Angular (v8-17+)", icon: Monitor, level: 95 },
@@ -117,45 +116,44 @@ const STATS = [
   { label: "Frontend Frameworks", value: "3" },
 ];
 
-// Experience extracted from CV[cite: 3]
 const EXPERIENCES = [
   {
-    role: "Senior Frontend Engineer",
+    role: "Software Developer",
     company: "SmartTerm Limited",
     period: "03/2024 - Present",
     responsibilities: [
-      "Lead the architectural design and development of highly responsive, multi-tenant SaaS web applications using modern React and Next.js.",
-      "Establish strictly typed data contracts between frontend clients and backend microservices, entirely eliminating network-layer integration bugs.",
-      "Drive end-to-end feature delivery by automating AWS CI/CD cloud deployment pipelines.",
+      "Lead the architectural design and development of highly responsive, multi-tenant SaaS client-side desktop and web applications using modern Angular and strict TypeScript.",
+      "Established strictly typed data contracts between the frontend clients and backend microservices entirely eliminating network-layer integration bugs.",
+      "Drive end-to-end feature delivery by automating cloud deployment pipelines (AWS/CI/CD) and optimizing Node.js REST APIs to ensure blazing-fast frontend data consumption.",
     ],
   },
   {
-    role: "Frontend Engineer",
+    role: "Software Developer",
     company: "Fidelity Bank",
     period: "06/2025 - 12/2025",
     responsibilities: [
-      "Spearheaded the architectural revamp of the retail online banking platform using modern Angular and Standalone Components.",
-      "Maintained legacy digital banking portals, proactively monitoring system stability and resolving UI bugs.",
-      "Engineered supplementary digital platforms utilizing React.js in rapid Agile sprint cycles.",
+      "Spearheaded the architectural revamp of the new retail online banking platform, utilizing modern Angular with Standalone Components to transform complex banking workflows.",
+      "Maintained and optimized the legacy digital banking portal, proactively monitoring system stability and resolving customer-impacting UI bugs.",
+      "Engineered supplementary digital platforms and internal web applications utilizing a full-stack React.js and PHP architecture in rapid Agile sprint cycles.",
     ],
   },
   {
-    role: "Frontend Engineer (Contract)",
+    role: "Software Developer (Contract)",
     company: "Mirton Matador Group",
     period: "01/2025 - 06/2025",
     responsibilities: [
-      "Architected Edu_Pay, a comprehensive educational platform using React and Vite with secure multi-role transaction management.",
-      "Developed TandTDealsStore, a production-ready e-commerce web app featuring seamless cart management and API integrations.",
+      "Architected Edu_Pay, a comprehensive educational platform using Angular, delivering a highly responsive SPA with secure multi-role transaction management.",
+      "Developed TandTDealsStore, a production-ready e-commerce web application featuring seamless cart management and third-party API integrations.",
     ],
   },
   {
-    role: "Frontend Engineer",
+    role: "Software Developer",
     company: "Zenith Bank",
     period: "09/2022 - 09/2024",
     responsibilities: [
       "Architected and overhauled the frontend infrastructure for internal trade finance portals, drastically reducing initial load times.",
-      "Developed highly reusable UI component libraries, ensuring strict design system consistency across banking platforms.",
-      "Engineered robust client-side state management to securely consume complex RESTful APIs.",
+      "Engineered robust client-side state management and error handling to securely consume complex RESTful APIs.",
+      "Collaborated tightly with UX/UI and backend engineering teams to resolve critical bottlenecks, ensuring a flawless browsing experience with zero downtime.",
     ],
   }, 
 
@@ -192,7 +190,7 @@ export default function Portfolio() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  const scrollTo = (id: string) => {
+  const scrollTo = (id) => {
     document
       .getElementById(id.toLowerCase())
       ?.scrollIntoView({ behavior: "smooth" });
@@ -201,7 +199,6 @@ export default function Portfolio() {
 
   return (
     <div className="min-h-screen bg-[#f8f9fc] text-gray-900">
-      {/* Navbar */}
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
           scrolled
@@ -258,7 +255,6 @@ export default function Portfolio() {
         )}
       </header>
 
-      {/* Hero */}
       <section id="about" className="min-h-screen flex items-center pt-20">
         <div className="max-w-6xl mx-auto px-6 py-20 w-full">
           <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -271,11 +267,10 @@ export default function Portfolio() {
                 Hi, I'm <span className="gradient-text text-blue-600">Mutalib</span>
               </h1>
               <p className="text-lg text-gray-500 mb-3 font-medium uppercase tracking-widest text-sm">
-                Senior Frontend Engineer
+                Software Developer
               </p>
               <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-md">
-                I architect high-performance, scalable enterprise SaaS and admin platforms. 
-                I bridge the gap between complex business logic and intuitive, accessible user interfaces.
+                I build high-performance, client-side applications (React, Angular) and architect scalable backend systems (Node.js, TypeScript). I bridge the gap between flawless user experiences and robust, event-driven cloud infrastructure.
               </p>
               <div className="flex gap-4 flex-wrap">
                 <button
@@ -286,7 +281,7 @@ export default function Portfolio() {
                   <ExternalLink size={16} />
                 </button>
                 <a
-                  href="/Mutalib_Adebayo_Frontend_Engineer_CV 4.pdf"
+                  href="/Mutalib_Adebayo__Software Engineer.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-gray-200 px-7 py-3 rounded-full font-semibold hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 text-gray-700"
@@ -319,18 +314,18 @@ export default function Portfolio() {
                       Mutalib Adebayo
                     </h2>
                     <p className="text-sm text-gray-500">
-                      Senior Frontend Engineer • Lagos, Nigeria
+                      Software Developer • Lagos, Nigeria
                     </p>
                   </div>
                 </div>
                 <p className="text-gray-600 leading-relaxed mb-6 text-sm">
-                  Focused on building component-driven architectures, managing complex client-side state, and integrating secure enterprise APIs.
+                  Focused on building component-driven frontend architectures, designing decoupled Microservices, and deploying automated CI/CD pipelines.
                 </p>
                 <div className="space-y-3">
                   {[
-                    { label: "Frontend Architecture", pct: 95 },
-                    { label: "State Management", pct: 90 },
-                    { label: "API Integration", pct: 88 },
+                    { label: "Full-Stack Architecture", pct: 95 },
+                    { label: "Backend Microservices", pct: 90 },
+                    { label: "Cloud & CI/CD", pct: 85 },
                   ].map((bar) => (
                     <div key={bar.label}>
                       <div className="flex justify-between text-xs font-medium mb-1">
@@ -367,7 +362,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Skills */}
       <section id="skills" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -412,7 +406,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Projects */}
       <section id="projects" className="py-24 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -432,7 +425,6 @@ export default function Portfolio() {
               return (
                 <div
                   key={project.title}
-                  // ADDED: flex flex-col h-full to the main card so it stretches evenly
                   className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 transition-all duration-300 hover:-translate-y-1 flex flex-col h-full"
                 >
                   <div className="relative h-48 overflow-hidden shrink-0">
@@ -456,7 +448,6 @@ export default function Portfolio() {
                     </div>
                   </div>
                   
-                  {/* FIXED: flex-grow ensures this container takes up remaining space, keeping buttons at the bottom */}
                   <div className="p-6 flex flex-col flex-grow">
                     <h3 className="text-lg font-bold mb-2 text-gray-900 leading-snug">
                       {project.title}
@@ -475,7 +466,6 @@ export default function Portfolio() {
                       ))}
                     </div>
                     
-                    {/* Links Section */}
                     <div className="flex items-center gap-3 pt-4 border-t border-gray-100 mt-auto">
                       {project.liveUrl && (
                         <a
@@ -508,7 +498,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Experience */}
       <section id="experience" className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -562,7 +551,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Contact */}
       <section id="contact" className="py-24 bg-[#f8f9fc]">
         <div className="max-w-6xl mx-auto px-6">
           <div className="text-center mb-16">
@@ -651,7 +639,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-white border-t border-gray-100 py-8 text-center">
         <p className="text-sm text-gray-400">
           &copy; {new Date().getFullYear()} Mutalib Adebayo. All rights reserved.
