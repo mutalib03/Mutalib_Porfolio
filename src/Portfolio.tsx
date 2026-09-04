@@ -122,19 +122,19 @@ const EXPERIENCES = [
     company: "SmartTerm Limited",
     period: "03/2024 - Present",
     responsibilities: [
-      "Lead the architectural design and development of highly responsive, multi-tenant SaaS client-side desktop and web applications using modern Angular and strict TypeScript.",
+      "Lead the architectural design and development of highly responsive, multi-tenant SaaS client-side desktop and web applications using modern Angular and React.",
       "Established strictly typed data contracts between the frontend clients and backend microservices entirely eliminating network-layer integration bugs.",
-      "Drive end-to-end feature delivery by automating cloud deployment pipelines (AWS/CI/CD) and optimizing Node.js REST APIs to ensure blazing-fast frontend data consumption.",
+      "Drive end-to-end feature delivery by automating cloud deployment pipelines (AWS/CI/CD) and optimizing Node.js REST APIs to ensure blazing-fast frontend data consumption."
     ],
   },
   {
-    role: "Software Developer",
+    role: "Software Developer (contract)",
     company: "Fidelity Bank",
     period: "06/2025 - 12/2025",
     responsibilities: [
-      "Spearheaded the architectural revamp of the new retail online banking platform, utilizing modern Angular with Standalone Components to transform complex banking workflows.",
-      "Maintained and optimized the legacy digital banking portal, proactively monitoring system stability and resolving customer-impacting UI bugs.",
-      "Engineered supplementary digital platforms and internal web applications utilizing a full-stack React.js and PHP architecture in rapid Agile sprint cycles.",
+      "Spearheaded the architectural revamp of the new retail online banking platform, utilizing modern Angular with Standalone Components to transform complex banking workflows into an intuitive, low-latency customer journey.",
+      "Maintained and optimized the legacy digital banking portal (AngularJS), proactively monitoring system stability and resolving customer-impacting UI bugs to ensure uninterrupted financial services.",
+      "Engineered supplementary digital platforms and internal web applications utilizing React.js. Also collaborating tightly with Product Managers and UX designers in rapid Agile sprint cycles."
     ],
   },
   {
@@ -142,8 +142,8 @@ const EXPERIENCES = [
     company: "Mirton Matador Group",
     period: "01/2025 - 06/2025",
     responsibilities: [
-      "Architected Edu_Pay, a comprehensive educational platform using Angular, delivering a highly responsive SPA with secure multi-role transaction management.",
-      "Developed TandTDealsStore, a production-ready e-commerce web application featuring seamless cart management and third-party API integrations.",
+      "Architected and delivered Edu_Pay, a comprehensive full-stack educational platform utilizing Angular, delivering a highly responsive SPA with secure multi-role transaction management and JWT authentication.",
+      "Developed TandTDealsStore using React, a production-ready e-commerce web application featuring seamless cart management, product catalog interfaces, and third-party email/payment integrations."
     ],
   },
   {
@@ -151,20 +151,19 @@ const EXPERIENCES = [
     company: "Zenith Bank",
     period: "09/2022 - 09/2024",
     responsibilities: [
-      "Architected and overhauled the frontend infrastructure for internal trade finance portals, drastically reducing initial load times.",
-      "Engineered robust client-side state management and error handling to securely consume complex RESTful APIs.",
-      "Collaborated tightly with UX/UI and backend engineering teams to resolve critical bottlenecks, ensuring a flawless browsing experience with zero downtime.",
+      "Architected and overhauled the frontend infrastructure for internal trade finance portals, drastically reducing initial load times and optimizing DOM rendering performance using Angular and React.",
+      "Developed and maintained highly reusable, modular UI component libraries, accelerating enterprise feature delivery and ensuring strict design system consistency across banking platforms.",
+      "Engineered robust client-side state management and error handling to securely consume complex RESTful APIs, ensuring the seamless processing of massive financial payloads for over 500 daily internal operators."
     ],
   }, 
-
   {
     role: "Software Developer",
     company: "REKORD INNOVATIVE TECHNOLOGIES LTD",
     period: "01/2020 - 01/2022",
     responsibilities: [
-      "Led the backend development lifecycle for multiple client applications, architecting robust Node.js RESTful APIs and designing optimized database schemas.",
-      "Implemented rigorous automated unit and integration testing procedures using Jest and Mocha to stabilize production APIs.",
-      "Mentored aspiring developers on core backend engineering concepts, API security best practices, and object-oriented design principles.",
+      "Led the backend development lifecycle for multiple client applications, architecting robust Node.js RESTful APIs and designing optimized relational and non-relational database schemas from initial spec to deployment.",
+      "Delivered a highly responsive SPA using React for a private educational client, implementing secure multi-role transaction management, state handling, and strict JWT authentication protocols.",
+      "Maintained and optimized legacy UI codebases over a two-year lifecycle, implementing automated component testing and resolving cross-browser compatibility issues to consistently improve initial page load times and Core Web Vitals."
     ],
   },
 ];
@@ -281,7 +280,7 @@ export default function Portfolio() {
                   <ExternalLink size={16} />
                 </button>
                 <a
-                  href="/Mutalib_Adebayo__Software Engineer.pdf"
+                  href="/Mutalib_Adebayo__Full_Stack.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="border-2 border-gray-200 px-7 py-3 rounded-full font-semibold hover:border-blue-300 hover:bg-blue-50 transition-all duration-200 text-gray-700"
